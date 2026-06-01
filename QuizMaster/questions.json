@@ -1,0 +1,1338 @@
+{
+  "csharp": [
+    {
+      "question": "What is the correct way to declare a variable in C#?",
+      "options": ["var name = 'John';", "String name = 'John';", "Both A and B", "None of the above"],
+      "correct": 2,
+      "explanation": "In C#, you can declare variables using explicit type (String name = 'John') or using var keyword with type inference (var name = 'John'). Both are valid."
+    },
+    {
+      "question": "Which keyword is used to inherit a class in C#?",
+      "options": ["extends", "inherits", ":", "implements"],
+      "correct": 2,
+      "explanation": "In C#, the colon (:) symbol is used for class inheritance. For example: 'class Child : Parent' means Child inherits from Parent."
+    },
+    {
+      "question": "What is the purpose of the 'using' statement in C#?",
+      "options": ["To import namespaces", "To manage resource disposal", "To create aliases", "All of the above"],
+      "correct": 3,
+      "explanation": "The 'using' statement in C# has multiple uses: importing namespaces, managing IDisposable resources for automatic cleanup, and creating namespace aliases."
+    },
+    {
+      "question": "Which access modifier makes a member accessible only within its own class?",
+      "options": ["public", "protected", "private", "internal"],
+      "correct": 2,
+      "explanation": "The 'private' access modifier restricts member access to only within the containing class. It's the most restrictive access level in C#."
+    },
+    {
+      "question": "What is a delegate in C#?",
+      "options": ["A type-safe function pointer", "A class that inherits from another class", "A variable that stores multiple values", "A method to handle exceptions"],
+      "correct": 0,
+      "explanation": "A delegate in C# is a type-safe function pointer that references methods. It allows methods to be passed as parameters and stored in variables."
+    },
+    {
+      "question": "Which method is called when an object is created in C#?",
+      "options": ["Initialize()", "Start()", "Constructor", "Create()"],
+      "correct": 2,
+      "explanation": "The constructor is a special method that is automatically called when an object is created. It has the same name as the class and no return type."
+    },
+    {
+      "question": "What does the 'async' keyword indicate in C#?",
+      "options": ["The method runs synchronously", "The method can run asynchronously", "The method is deprecated", "The method returns void"],
+      "correct": 1,
+      "explanation": "The 'async' keyword indicates that a method can run asynchronously, allowing it to use await operators and return Task or Task<T> instead of blocking."
+    },
+    {
+      "question": "Which collection type is thread-safe by default in C#?",
+      "options": ["List", "ArrayList", "ConcurrentDictionary", "Dictionary"],
+      "correct": 2,
+      "explanation": "ConcurrentDictionary and other collections in System.Collections.Concurrent are designed for thread-safe operations without requiring explicit locking."
+    },
+    {
+      "question": "What is LINQ in C#?",
+      "options": ["A database technology", "Language Integrated Query", "A web framework", "A testing tool"],
+      "correct": 1,
+      "explanation": "LINQ (Language Integrated Query) provides a consistent query syntax for working with collections, databases, XML, and other data sources in C#."
+    },
+    {
+      "question": "Which operator is used for null checking in C#?",
+      "options": ["??", "?:", "&&", "||"],
+      "correct": 0,
+      "explanation": "The null-coalescing operator (??) returns the left operand if it's not null, otherwise returns the right operand. It's used for null checking and providing default values."
+    },
+    {
+      "question": "What is the purpose of the 'sealed' keyword in C#?",
+      "options": ["To prevent inheritance", "To prevent method overriding", "To mark a class as abstract", "To improve performance"],
+      "correct": 0,
+      "explanation": "The 'sealed' keyword prevents a class from being inherited or a method from being overridden. It's used when you want to stop the inheritance chain."
+    },
+    {
+      "question": "Which interface must be implemented to make a class iterable in C#?",
+      "options": ["ICollection", "IEnumerable", "IList", "IEnumerator"],
+      "correct": 1,
+      "explanation": "IEnumerable interface must be implemented to make a class iterable. It requires implementing the GetEnumerator() method which returns an IEnumerator."
+    },
+    {
+      "question": "What is the difference between 'ref' and 'out' parameters?",
+      "options": ["No difference", "ref requires initialization, out doesn't", "out requires initialization, ref doesn't", "Both are the same"],
+      "correct": 1,
+      "explanation": "ref parameters must be initialized before being passed, while out parameters don't need initialization but must be assigned before the method returns."
+    },
+    {
+      "question": "Which attribute is used to mark a method as obsolete?",
+      "options": ["[Deprecated]", "[Obsolete]", "[Old]", "[Legacy]"],
+      "correct": 1,
+      "explanation": "The [Obsolete] attribute marks program elements as no longer in use and can display a warning or error message during compilation."
+    },
+    {
+      "question": "What is a property in C#?",
+      "options": ["A private field", "A public field with get/set accessors", "A method", "A constructor"],
+      "correct": 1,
+      "explanation": "A property is a class member that provides a flexible mechanism to read, write, or compute the value of a private field using get and set accessors."
+    },
+    {
+      "question": "Which keyword is used to handle exceptions in C#?",
+      "options": ["error", "catch", "handle", "throw"],
+      "correct": 1,
+      "explanation": "The 'catch' keyword is used in exception handling to catch and process exceptions that are thrown in a try block. It's paired with try and optionally finally."
+    },
+    {
+      "question": "What is the purpose of the 'virtual' keyword?",
+      "options": ["To make a method static", "To allow method overriding", "To make a class abstract", "To prevent inheritance"],
+      "correct": 1,
+      "explanation": "The 'virtual' keyword allows a method to be overridden in derived classes. It's the foundation of polymorphism in C# object-oriented programming."
+    },
+    {
+      "question": "Which data type is used to store decimal numbers with high precision?",
+      "options": ["float", "double", "decimal", "long"],
+      "correct": 2,
+      "explanation": "The 'decimal' type provides 28-29 significant digits and is ideal for financial calculations where precision is critical, unlike float or double."
+    },
+    {
+      "question": "What is an event in C#?",
+      "options": ["A method call", "A notification mechanism", "A variable", "A class"],
+      "correct": 1,
+      "explanation": "An event is a notification mechanism that allows objects to notify other objects when something happens. It's based on delegates and commonly used in UI programming."
+    },
+    {
+      "question": "Which method converts a string to an integer in C#?",
+      "options": ["StringToInt()", "Convert.ToInt32()", "ParseInt()", "ToInteger()"],
+      "correct": 1,
+      "explanation": "Convert.ToInt32() or int.Parse() are used to convert strings to integers. Convert.ToInt32() handles null values better, while Parse() throws exceptions."
+    },
+    {
+      "question": "What is the 'this' keyword used for in C#?",
+      "options": ["To refer to the base class", "To refer to the current instance", "To create a new object", "To call static methods"],
+      "correct": 1,
+      "explanation": "The 'this' keyword refers to the current instance of the class. It's used to distinguish between class members and parameters with the same name."
+    },
+    {
+      "question": "Which collection type maintains insertion order?",
+      "options": ["Dictionary", "HashSet", "List", "Queue"],
+      "correct": 2,
+      "explanation": "List maintains insertion order and allows duplicate elements. Dictionary and HashSet don't guarantee order, while Queue follows FIFO order."
+    },
+    {
+      "question": "What is the purpose of the 'finally' block?",
+      "options": ["To throw exceptions", "To execute code regardless of exceptions", "To catch specific exceptions", "To define methods"],
+      "correct": 1,
+      "explanation": "The 'finally' block executes code regardless of whether an exception occurred or not. It's typically used for cleanup operations like closing files or connections."
+    },
+    {
+      "question": "Which keyword creates an anonymous type in C#?",
+      "options": ["var", "dynamic", "anonymous", "new"],
+      "correct": 0,
+      "explanation": "The 'var' keyword is used with anonymous types. Anonymous types are created using 'new { Property = value }' syntax and are read-only."
+    },
+    {
+      "question": "What is the difference between '==' and 'Equals()' in C#?",
+      "options": ["No difference", "== compares references, Equals() compares values", "Equals() compares references, == compares values", "Both are identical"],
+      "correct": 1,
+      "explanation": "For reference types, == compares references by default, while Equals() compares values. However, this can be overridden by implementing IEquatable or overriding Equals()."
+    },
+    {
+      "question": "Which namespace contains generic collection classes in C#?",
+      "options": ["System.Collections", "System.Collections.Generic", "System.Data", "System.Linq"],
+      "correct": 1,
+      "explanation": "System.Collections.Generic contains type-safe generic collections like List<T>, Dictionary<TKey,TValue>, and Queue<T> that provide better performance than non-generic versions."
+    },
+    {
+      "question": "What is a struct in C#?",
+      "options": ["A reference type", "A value type", "An abstract class", "An interface"],
+      "correct": 1,
+      "explanation": "A struct is a value type that is stored on the stack, unlike classes which are reference types stored on the heap. Structs are used for small, lightweight objects."
+    },
+    {
+      "question": "Which method is used to sort a List in C#?",
+      "options": ["Order()", "Sort()", "Arrange()", "Organize()"],
+      "correct": 1,
+      "explanation": "The Sort() method is used to sort elements in a List. It can use default comparison or accept custom comparers for complex sorting logic."
+    },
+    {
+      "question": "What is the purpose of the 'partial' keyword?",
+      "options": ["To create partial classes", "To make methods partial", "Both A and B", "None of the above"],
+      "correct": 2,
+      "explanation": "The 'partial' keyword allows splitting a class, struct, or interface across multiple files. It's useful for auto-generated code and separating large classes."
+    }
+  ],
+  "sql": [
+    {
+      "question": "Which SQL statement is used to retrieve data from a database?",
+      "options": ["GET", "OPEN", "SELECT", "EXTRACT"],
+      "correct": 2,
+      "explanation": "The SELECT statement is used to retrieve data from one or more tables in a database. It's the most commonly used SQL statement for data queries."
+    },
+    {
+      "question": "Which clause is used to filter records in SQL?",
+      "options": ["FILTER", "WHERE", "HAVING", "CASE"],
+      "correct": 1,
+      "explanation": "The WHERE clause is used to filter records based on specified conditions. It extracts only those records that fulfill a specified condition."
+    },
+    {
+      "question": "What does the DISTINCT keyword do in SQL?",
+      "options": ["Returns unique values", "Returns duplicate values", "Sorts the results", "Groups the results"],
+      "correct": 0,
+      "explanation": "The DISTINCT keyword is used to return only distinct (different) values, removing duplicates from the result set."
+    },
+    {
+      "question": "Which SQL function is used to count rows?",
+      "options": ["SUM()", "COUNT()", "TOTAL()", "NUMBER()"],
+      "correct": 1,
+      "explanation": "COUNT() is an aggregate function that returns the number of rows that match a specified criterion. It's commonly used with GROUP BY."
+    },
+    {
+      "question": "What is a primary key in SQL?",
+      "options": ["A unique identifier for each record", "A foreign key reference", "An index", "A constraint"],
+      "correct": 0,
+      "explanation": "A primary key is a column or set of columns that uniquely identifies each row in a table. It ensures data integrity and enables efficient data retrieval."
+    },
+    {
+      "question": "Which join returns all records from both tables?",
+      "options": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL OUTER JOIN"],
+      "correct": 3,
+      "explanation": "FULL OUTER JOIN returns all records when there's a match in either table. It combines the results of both LEFT and RIGHT JOINs."
+    },
+    {
+      "question": "What does the GROUP BY clause do?",
+      "options": ["Sorts data", "Groups rows that have the same values", "Filters data", "Joins tables"],
+      "correct": 1,
+      "explanation": "GROUP BY arranges identical data into groups. It's often used with aggregate functions like COUNT, SUM, AVG to perform calculations on each group."
+    },
+    {
+      "question": "Which SQL statement is used to add a new record?",
+      "options": ["ADD", "INSERT", "CREATE", "UPDATE"],
+      "correct": 1,
+      "explanation": "INSERT INTO statement is used to add new rows of data to a table. You specify the table name and values for each column."
+    },
+    {
+      "question": "What is a foreign key in SQL?",
+      "options": ["A key that references another table", "A unique identifier", "An index", "A primary key"],
+      "correct": 0,
+      "explanation": "A foreign key is a field that links two tables together. It references the primary key of another table, establishing relationships between tables."
+    },
+    {
+      "question": "Which operator is used for pattern matching in SQL?",
+      "options": ["=", "LIKE", "MATCH", "PATTERN"],
+      "correct": 1,
+      "explanation": "LIKE operator is used for pattern matching in text columns. It uses wildcards like % (any string) and _ (single character) to search for patterns."
+    },
+    {
+      "question": "What does the HAVING clause do?",
+      "options": ["Filters individual rows", "Filters grouped data", "Sorts data", "Joins tables"],
+      "correct": 1,
+      "explanation": "HAVING clause filters records after they have been grouped by GROUP BY. It's used to apply conditions to aggregate functions."
+    },
+    {
+      "question": "Which SQL function concatenates strings?",
+      "options": ["JOIN()", "CONCAT()", "MERGE()", "COMBINE()"],
+      "correct": 1,
+      "explanation": "CONCAT() function joins two or more strings together. Some databases use || or + operators for concatenation as well."
+    },
+    {
+      "question": "What is a NULL value in SQL?",
+      "options": ["Zero", "Empty string", "Missing or unknown value", "False"],
+      "correct": 2,
+      "explanation": "NULL represents a missing or unknown value. It's not the same as zero or empty string. Special handling is required as NULL != NULL."
+    },
+    {
+      "question": "Which statement modifies existing data?",
+      "options": ["CHANGE", "MODIFY", "UPDATE", "ALTER"],
+      "correct": 2,
+      "explanation": "UPDATE statement modifies existing records in a table. You specify the table, set new values, and optionally use WHERE to filter which rows to update."
+    },
+    {
+      "question": "What is an index in SQL?",
+      "options": ["A primary key", "A data structure for fast retrieval", "A foreign key", "A constraint"],
+      "correct": 1,
+      "explanation": "An index is a data structure that improves the speed of data retrieval operations on a database table at the cost of additional writes and storage."
+    },
+    {
+      "question": "Which function returns the current date?",
+      "options": ["DATE()", "NOW()", "CURRENT_DATE", "Both B and C"],
+      "correct": 3,
+      "explanation": "Different databases use different functions: CURRENT_DATE (standard SQL), NOW() (MySQL/PostgreSQL), GETDATE() (SQL Server) to return the current date/time."
+    },
+    {
+      "question": "What does the ORDER BY clause do?",
+      "options": ["Filters data", "Sorts the result set", "Groups data", "Joins tables"],
+      "correct": 1,
+      "explanation": "ORDER BY clause sorts the result set in ascending or descending order based on one or more columns. ASC is default, DESC for descending."
+    },
+    {
+      "question": "Which SQL statement deletes data?",
+      "options": ["REMOVE", "DELETE", "DROP", "ERASE"],
+      "correct": 1,
+      "explanation": "DELETE statement removes rows from a table. DROP removes entire tables or databases. Always use WHERE with DELETE to avoid deleting all data."
+    },
+    {
+      "question": "What is a view in SQL?",
+      "options": ["A table", "A virtual table based on query", "An index", "A stored procedure"],
+      "correct": 1,
+      "explanation": "A view is a virtual table based on the result-set of an SQL statement. It doesn't store data physically but presents data from underlying tables."
+    },
+    {
+      "question": "Which constraint ensures a column cannot have NULL values?",
+      "options": ["PRIMARY KEY", "UNIQUE", "NOT NULL", "CHECK"],
+      "correct": 2,
+      "explanation": "NOT NULL constraint ensures a column cannot contain NULL values. Every row must have a value for columns with this constraint."
+    },
+    {
+      "question": "What is a stored procedure?",
+      "options": ["A table", "A prepared SQL code saved for reuse", "An index", "A view"],
+      "correct": 1,
+      "explanation": "A stored procedure is a prepared SQL code that you can save and reuse. It accepts parameters, performs operations, and can return results."
+    },
+    {
+      "question": "Which function returns the average value?",
+      "options": ["MEAN()", "AVG()", "AVERAGE()", "MEDIAN()"],
+      "correct": 1,
+      "explanation": "AVG() is an aggregate function that calculates the arithmetic mean of values in a numeric column, ignoring NULL values."
+    },
+    {
+      "question": "What is normalization in SQL?",
+      "options": ["Creating backups", "Organizing data to reduce redundancy", "Encrypting data", "Compressing data"],
+      "correct": 1,
+      "explanation": "Normalization is the process of organizing data to reduce redundancy and improve data integrity by dividing large tables into smaller, related tables."
+    },
+    {
+      "question": "Which join returns only matching records?",
+      "options": ["LEFT JOIN", "RIGHT JOIN", "INNER JOIN", "FULL JOIN"],
+      "correct": 2,
+      "explanation": "INNER JOIN returns only rows where there's a match in both tables. It's the default join type and most commonly used."
+    },
+    {
+      "question": "What does the TRUNCATE command do?",
+      "options": ["Deletes specific rows", "Removes all rows quickly", "Drops the table", "Renames the table"],
+      "correct": 1,
+      "explanation": "TRUNCATE removes all rows from a table faster than DELETE. It's a DDL operation that cannot be rolled back and resets auto-increment counters."
+    },
+    {
+      "question": "Which function extracts a substring?",
+      "options": ["SUBSTRING()", "EXTRACT()", "PART()", "SLICE()"],
+      "correct": 0,
+      "explanation": "SUBSTRING() extracts a portion of a string. Syntax varies by database: SUBSTRING(string, start, length) or SUBSTR(string, start, length)."
+    },
+    {
+      "question": "What is a transaction in SQL?",
+      "options": ["A single query", "A sequence of operations as one unit", "A backup", "An index"],
+      "correct": 1,
+      "explanation": "A transaction is a sequence of operations performed as a single logical unit of work. Either all operations succeed, or none do (ACID properties)."
+    },
+    {
+      "question": "Which clause limits the number of results?",
+      "options": ["TOP", "LIMIT", "FETCH", "All of the above"],
+      "correct": 3,
+      "explanation": "Different databases use different syntax: LIMIT (MySQL/PostgreSQL), TOP (SQL Server), FETCH FIRST (Oracle) to limit result set size."
+    }
+  ],
+  "grafana": [
+    {
+      "question": "What is Grafana primarily used for?",
+      "options": ["Database management", "Data visualization and monitoring", "Code compilation", "Network configuration"],
+      "correct": 1,
+      "explanation": "Grafana is an open-source analytics and interactive visualization platform used for monitoring, analyzing, and visualizing metrics from various data sources."
+    },
+    {
+      "question": "Which query language does Grafana use for Prometheus?",
+      "options": ["SQL", "PromQL", "GraphQL", "JSON"],
+      "correct": 1,
+      "explanation": "PromQL (Prometheus Query Language) is used to query Prometheus data sources in Grafana. It's a powerful language for time-series data."
+    },
+    {
+      "question": "What is a dashboard in Grafana?",
+      "options": ["A database table", "A collection of panels", "A data source", "A user account"],
+      "correct": 1,
+      "explanation": "A dashboard is a collection of panels that display visualizations of your data. It's the main interface for viewing and analyzing metrics."
+    },
+    {
+      "question": "Which visualization type shows trends over time?",
+      "options": ["Pie chart", "Time series graph", "Table", "Stat panel"],
+      "correct": 1,
+      "explanation": "Time series graphs display data points over time, showing trends, patterns, and changes in metrics. They're the most common visualization in Grafana."
+    },
+    {
+      "question": "What is a panel in Grafana?",
+      "options": ["A data source", "A visualization component", "A user", "A database"],
+      "correct": 1,
+      "explanation": "A panel is the basic building block of a dashboard. Each panel displays a specific visualization like a graph, table, or single statistic."
+    },
+    {
+      "question": "Which data source is NOT natively supported by Grafana?",
+      "options": ["Prometheus", "InfluxDB", "MySQL", "None of the above"],
+      "correct": 3,
+      "explanation": "Grafana natively supports many data sources including Prometheus, InfluxDB, MySQL, PostgreSQL, Elasticsearch, and many more through plugins."
+    },
+    {
+      "question": "What is the purpose of variables in Grafana?",
+      "options": ["To store user credentials", "To create dynamic, interactive dashboards", "To backup data", "To export dashboards"],
+      "correct": 1,
+      "explanation": "Variables allow you to create dynamic dashboards where users can interactively change values like time ranges, servers, or metrics without editing the dashboard."
+    },
+    {
+      "question": "Which panel type displays a single numeric value?",
+      "options": ["Graph", "Table", "Stat", "Pie chart"],
+      "correct": 2,
+      "explanation": "The Stat panel displays a single numeric value, often used for showing key metrics like current CPU usage, request count, or error rate."
+    },
+    {
+      "question": "What is an annotation in Grafana?",
+      "options": ["A data source", "A marker on a graph for events", "A user permission", "A dashboard template"],
+      "correct": 1,
+      "explanation": "Annotations are markers on graphs that highlight specific events like deployments, incidents, or configuration changes, providing context to metric changes."
+    },
+    {
+      "question": "Which feature allows you to combine multiple queries?",
+      "options": ["Transformations", "Variables", "Alerts", "Plugins"],
+      "correct": 0,
+      "explanation": "Transformations allow you to manipulate, combine, and restructure query results. You can join, merge, or perform calculations on data from multiple queries."
+    },
+    {
+      "question": "What is the purpose of alerts in Grafana?",
+      "options": ["To decorate dashboards", "To notify when conditions are met", "To store data", "To create users"],
+      "correct": 1,
+      "explanation": "Alerts automatically notify you when specified conditions are met, such as when a metric exceeds a threshold. They can send notifications via various channels."
+    },
+    {
+      "question": "Which time range option shows the last hour?",
+      "options": ["Last 1h", "Last 60m", "1h", "All of the above"],
+      "correct": 3,
+      "explanation": "Grafana accepts multiple time range formats: 'Last 1h', 'Last 60m', or simply '1h' all represent the same one-hour time range."
+    },
+    {
+      "question": "What is a data source in Grafana?",
+      "options": ["A database", "A storage location for metrics", "A visualization", "A user"],
+      "correct": 1,
+      "explanation": "A data source is where Grafana retrieves data from. It can be time-series databases, relational databases, or any system that provides metrics."
+    },
+    {
+      "question": "Which visualization compares values as proportions?",
+      "options": ["Line graph", "Pie chart", "Bar gauge", "Heatmap"],
+      "correct": 1,
+      "explanation": "Pie charts and donut charts show values as proportions of a whole, making them useful for displaying percentage breakdowns or composition."
+    },
+    {
+      "question": "What does the 'refresh' setting control?",
+      "options": ["Dashboard appearance", "How often data is fetched", "User permissions", "Data storage"],
+      "correct": 1,
+      "explanation": "The refresh interval controls how often Grafana fetches new data from data sources. Common intervals include 5s, 10s, 1m, 5m, or off."
+    },
+    {
+      "question": "Which authentication method is NOT built-in to Grafana?",
+      "options": ["Basic auth", "OAuth", "LDAP", "None of the above"],
+      "correct": 3,
+      "explanation": "Grafana supports multiple authentication methods including basic auth, OAuth, LDAP, SAML, and many more through plugins."
+    },
+    {
+      "question": "What is a folder in Grafana?",
+      "options": ["A data source", "A way to organize dashboards", "A user group", "A plugin"],
+      "correct": 1,
+      "explanation": "Folders help organize dashboards into logical groups, making it easier to manage and navigate large numbers of dashboards."
+    },
+    {
+      "question": "Which panel type displays hierarchical data?",
+      "options": ["Table", "Tree map", "Line graph", "Stat"],
+      "correct": 1,
+      "explanation": "Tree map panels display hierarchical data using nested rectangles, useful for showing proportions within categories and subcategories."
+    },
+    {
+      "question": "What is the purpose of the query editor?",
+      "options": ["To write SQL queries", "To build queries for data sources", "To edit dashboard JSON", "To manage users"],
+      "correct": 1,
+      "explanation": "The query editor provides a UI to build and test queries for specific data sources. It varies based on the data source type (PromQL, SQL, InfluxQL, etc.)."
+    },
+    {
+      "question": "Which feature allows sharing dashboards?",
+      "options": ["Snapshots", "Export", "Both A and B", "Neither"],
+      "correct": 2,
+      "explanation": "Grafana allows sharing via snapshots (static images) and export (JSON files that can be imported). It also supports direct links and embedding."
+    },
+    {
+      "question": "What does the 'timezone' setting affect?",
+      "options": ["User location", "Time display on graphs", "Data source connection", "Alert timing"],
+      "correct": 1,
+      "explanation": "The timezone setting determines how time is displayed on graphs. Options include browser local time, UTC, or specific timezones."
+    },
+    {
+      "question": "Which transformation merges multiple series?",
+      "options": ["Join by field", "Organize fields", "Merge", "Concatenate"],
+      "correct": 0,
+      "explanation": "The 'Join by field' transformation merges multiple series or tables based on a common field, combining data from different queries."
+    },
+    {
+      "question": "What is a plugin in Grafana?",
+      "options": ["A data source", "An extension for additional functionality", "A user", "A dashboard"],
+      "correct": 1,
+      "explanation": "Plugins extend Grafana's functionality. They can add new data sources, panel types, applications, or other features beyond the core capabilities."
+    },
+    {
+      "question": "Which alert state indicates a resolved condition?",
+      "options": ["Firing", "Pending", "OK", "Normal"],
+      "correct": 2,
+      "explanation": "The OK state indicates that the alert condition is no longer met. Alert states typically cycle between OK, Pending, and Firing."
+    },
+    {
+      "question": "What does the 'legend' display on a graph?",
+      "options": ["User names", "Series names and colors", "Time range", "Query text"],
+      "correct": 1,
+      "explanation": "The legend shows the names and colors of different series on a graph, allowing users to identify and toggle individual data series."
+    },
+    {
+      "question": "Which panel type is best for log data?",
+      "options": ["Logs panel", "Table", "Graph", "Stat"],
+      "correct": 0,
+      "explanation": "The Logs panel is specifically designed for displaying and searching log data. It supports filtering, highlighting, and exploring log entries."
+    },
+    {
+      "question": "What is the purpose of row repetition?",
+      "options": ["To duplicate rows", "To create panels for each variable value", "To sort panels", "To delete rows"],
+      "correct": 1,
+      "explanation": "Row repetition creates multiple copies of a row or panel for each value in a variable, enabling dynamic dashboard generation based on variable selections."
+    },
+    {
+      "question": "Which feature compares current values to previous periods?",
+      "options": ["Time shift", "Difference", "Both A and B", "Neither"],
+      "correct": 2,
+      "explanation": "Both Time shift (shows data from different time periods) and Difference (calculates change between periods) help compare current values to historical data."
+    }
+  ],
+  "ai": [
+    {
+      "question": "What is Machine Learning?",
+      "options": ["Programming robots", "Algorithms that learn from data", "Building websites", "Database management"],
+      "correct": 1,
+      "explanation": "Machine Learning is a subset of AI where algorithms learn patterns from data to make predictions or decisions without explicit programming."
+    },
+    {
+      "question": "Which type of learning uses labeled data?",
+      "options": ["Unsupervised learning", "Supervised learning", "Reinforcement learning", "Deep learning"],
+      "correct": 1,
+      "explanation": "Supervised learning uses labeled data where the algorithm learns from input-output pairs. Examples include classification and regression tasks."
+    },
+    {
+      "question": "What is a neural network?",
+      "options": ["A computer network", "A brain simulation", "A computing system inspired by biological neurons", "A database"],
+      "correct": 2,
+      "explanation": "A neural network is a computing system inspired by biological neurons. It consists of interconnected nodes (neurons) organized in layers that process information."
+    },
+    {
+      "question": "What is the purpose of the activation function?",
+      "options": ["To initialize weights", "To introduce non-linearity", "To normalize data", "To reduce overfitting"],
+      "correct": 1,
+      "explanation": "Activation functions introduce non-linearity into neural networks, enabling them to learn complex patterns. Common functions include ReLU, sigmoid, and tanh."
+    },
+    {
+      "question": "What is overfitting in ML?",
+      "options": ["Model performs well on training data only", "Model performs well on all data", "Model is too simple", "Model has no parameters"],
+      "correct": 0,
+      "explanation": "Overfitting occurs when a model learns the training data too well, including noise, and fails to generalize to new, unseen data."
+    },
+    {
+      "question": "Which algorithm is used for clustering?",
+      "options": ["Linear regression", "K-means", "Decision tree", "Logistic regression"],
+      "correct": 1,
+      "explanation": "K-means is an unsupervised clustering algorithm that groups data points into K clusters based on feature similarity, minimizing within-cluster variance."
+    },
+    {
+      "question": "What is a convolutional neural network (CNN)?",
+      "options": ["For text processing", "For image processing", "For time series", "For audio only"],
+      "correct": 1,
+      "explanation": "CNNs are specialized neural networks designed for image processing. They use convolutional layers to detect spatial patterns and hierarchical features."
+    },
+    {
+      "question": "What is Natural Language Processing (NLP)?",
+      "options": ["Processing natural sounds", "AI understanding human language", "Natural database queries", "Network protocols"],
+      "correct": 1,
+      "explanation": "NLP is the field of AI focused on the interaction between computers and human language, including tasks like translation, sentiment analysis, and text generation."
+    },
+    {
+      "question": "What is backpropagation?",
+      "options": ["Forward pass", "Algorithm to train neural networks", "Data preprocessing", "Feature selection"],
+      "correct": 1,
+      "explanation": "Backpropagation is the algorithm used to train neural networks. It calculates gradients of the loss function and updates weights to minimize errors."
+    },
+    {
+      "question": "What is a decision tree?",
+      "options": ["A data structure", "A flowchart-like model for decisions", "A database index", "A sorting algorithm"],
+      "correct": 1,
+      "explanation": "A decision tree is a flowchart-like model where each internal node represents a decision based on a feature, leading to predictions at leaf nodes."
+    },
+    {
+      "question": "What is the purpose of regularization?",
+      "options": ["To increase model complexity", "To prevent overfitting", "To speed up training", "To add more data"],
+      "correct": 1,
+      "explanation": "Regularization techniques like L1/L2 regularization add penalties to the loss function to prevent overfitting by discouraging overly complex models."
+    },
+    {
+      "question": "What is a transformer in AI?",
+      "options": ["Data conversion tool", "Neural network architecture for NLP", "Hardware device", "Database"],
+      "correct": 1,
+      "explanation": "Transformers are neural network architectures that use attention mechanisms to process sequential data. They're the foundation of models like GPT and BERT."
+    },
+    {
+      "question": "What is reinforcement learning?",
+      "options": ["Learning from labeled data", "Learning through trial and error with rewards", "Learning from examples", "Learning from rules"],
+      "correct": 1,
+      "explanation": "Reinforcement learning is where an agent learns to make decisions by receiving rewards or penalties for actions, optimizing for long-term cumulative reward."
+    },
+    {
+      "question": "What is the purpose of the loss function?",
+      "options": ["To store data", "To measure model error", "To increase speed", "To add features"],
+      "correct": 1,
+      "explanation": "The loss function measures the difference between predicted and actual values. Minimizing this loss during training improves model accuracy."
+    },
+    {
+      "question": "What is gradient descent?",
+      "options": ["A type of neural network", "Optimization algorithm to minimize loss", "Data preprocessing", "Feature extraction"],
+      "correct": 1,
+      "explanation": "Gradient descent is an optimization algorithm that iteratively adjusts model parameters in the direction of steepest descent of the loss function."
+    },
+    {
+      "question": "What is a hyperparameter?",
+      "options": ["Model parameter learned during training", "Configuration set before training", "Data feature", "Output value"],
+      "correct": 1,
+      "explanation": "Hyperparameters are configuration settings set before training, like learning rate, batch size, or number of layers, unlike parameters learned during training."
+    },
+    {
+      "question": "What is the difference between AI and ML?",
+      "options": ["No difference", "ML is a subset of AI", "AI is a subset of ML", "They are unrelated"],
+      "correct": 1,
+      "explanation": "Machine Learning is a subset of Artificial Intelligence. AI is the broader field of creating intelligent systems, while ML specifically focuses on algorithms that learn from data."
+    },
+    {
+      "question": "What is a recurrent neural network (RNN)?",
+      "options": ["For image classification", "For sequential data", "For clustering", "For regression"],
+      "correct": 1,
+      "explanation": "RNNs are designed for sequential data like text or time series. They have internal memory to process sequences by maintaining hidden states across time steps."
+    },
+    {
+      "question": "What is transfer learning?",
+      "options": ["Moving data between servers", "Using pre-trained models for new tasks", "Learning from scratch", "Data augmentation"],
+      "correct": 1,
+      "explanation": "Transfer learning reuses a pre-trained model on a new task, leveraging learned features to achieve better performance with less data and training time."
+    },
+    {
+      "question": "What is the purpose of batch normalization?",
+      "options": ["To increase batch size", "To normalize layer inputs", "To add more layers", "To reduce data"],
+      "correct": 1,
+      "explanation": "Batch normalization normalizes the inputs of each layer to have zero mean and unit variance, improving training stability and speed."
+    },
+    {
+      "question": "What is a generative model?",
+      "options": ["Classifies data", "Generates new data samples", "Clusters data", "Reduces dimensions"],
+      "correct": 1,
+      "explanation": "Generative models learn the underlying distribution of data to generate new, similar samples. Examples include GANs and VAEs."
+    },
+    {
+      "question": "What is the attention mechanism?",
+      "options": ["Focus mechanism in neural networks", "User attention tracking", "Data validation", "Model selection"],
+      "correct": 0,
+      "explanation": "Attention mechanisms allow models to focus on specific parts of input data, weighing their importance differently. It's key to transformers' success."
+    },
+    {
+      "question": "What is a support vector machine (SVM)?",
+      "options": ["Neural network", "Classification algorithm", "Clustering method", "Dimensionality reduction"],
+      "correct": 1,
+      "explanation": "SVM is a supervised learning algorithm for classification and regression. It finds the optimal hyperplane that maximally separates different classes."
+    },
+    {
+      "question": "What is the purpose of cross-validation?",
+      "options": ["To validate user input", "To assess model performance", "To create more data", "To speed up training"],
+      "correct": 1,
+      "explanation": "Cross-validation assesses how well a model generalizes by partitioning data into training and validation sets multiple times, providing reliable performance estimates."
+    },
+    {
+      "question": "What is deep learning?",
+      "options": ["Learning about deep topics", "Neural networks with many layers", "Database deep storage", "Deep data mining"],
+      "correct": 1,
+      "explanation": "Deep learning uses neural networks with many layers (deep networks) to learn hierarchical representations of data, excelling at complex pattern recognition."
+    },
+    {
+      "question": "What is the vanishing gradient problem?",
+      "options": ["Gradients become too large", "Gradients become too small during backpropagation", "Data disappears", "Model vanishes"],
+      "correct": 1,
+      "explanation": "The vanishing gradient problem occurs when gradients become extremely small during backpropagation in deep networks, preventing effective training of early layers."
+    },
+    {
+      "question": "What is a GAN (Generative Adversarial Network)?",
+      "options": ["Game AI network", "Two neural networks competing", "Graph analysis network", "General AI network"],
+      "correct": 1,
+      "explanation": "GANs consist of two networks: a generator that creates fake data and a discriminator that tries to distinguish real from fake, improving through competition."
+    }
+  ],
+  "javascript": [
+    {
+      "question": "How do you declare a variable in JavaScript?",
+      "options": ["variable name = 'value';", "var name = 'value';", "v name = 'value';", "declare name = 'value';"],
+      "correct": 1,
+      "explanation": "Variables in JavaScript can be declared using var, let (for block-scoped variables), or const (for constants). 'var name = value' is the traditional syntax."
+    },
+    {
+      "question": "What is the result of typeof null in JavaScript?",
+      "options": ["'null'", "'undefined'", "'object'", "'number'"],
+      "correct": 2,
+      "explanation": "typeof null returns 'object' in JavaScript. This is a well-known bug that has existed since the first version of JavaScript for backward compatibility."
+    },
+    {
+      "question": "Which method adds an element to the end of an array?",
+      "options": ["add()", "push()", "insert()", "append()"],
+      "correct": 1,
+      "explanation": "The push() method adds one or more elements to the end of an array and returns the new length. It's the standard way to append elements."
+    },
+    {
+      "question": "What is a closure in JavaScript?",
+      "options": ["A function that closes", "Function with access to outer scope", "A closed variable", "A method to close windows"],
+      "correct": 1,
+      "explanation": "A closure is a function that has access to variables from its outer (enclosing) scope, even after the outer function has returned. It's a fundamental JavaScript concept."
+    },
+    {
+      "question": "What does '===' compare?",
+      "options": ["Only values", "Only types", "Both value and type", "Neither"],
+      "correct": 2,
+      "explanation": "The strict equality operator (===) compares both value and type without type coercion. '5' === 5 returns false, while '5' == 5 returns true."
+    },
+    {
+      "question": "How do you create a function in JavaScript?",
+      "options": ["function myFunc() {}", "create myFunc() {}", "def myFunc() {}", "method myFunc() {}"],
+      "correct": 0,
+      "explanation": "Functions are created using the 'function' keyword: function myFunc() { }. Arrow functions provide alternative syntax: const myFunc = () => { }."
+    },
+    {
+      "question": "What is the DOM in JavaScript?",
+      "options": ["Data Object Model", "Document Object Model", "Digital Order Method", "Database Object Method"],
+      "correct": 1,
+      "explanation": "The Document Object Model (DOM) is a programming interface that represents HTML documents as objects, allowing JavaScript to manipulate page content and structure."
+    },
+    {
+      "question": "Which method selects an element by ID?",
+      "options": ["getElementByClass()", "getElementById()", "querySelector()", "selectElement()"],
+      "correct": 1,
+      "explanation": "document.getElementById('id') selects an element by its ID attribute. querySelector('#id') is a modern alternative that uses CSS selector syntax."
+    },
+    {
+      "question": "What is an IIFE?",
+      "options": ["Immediate Invoked Function Expression", "Internal Function for Events", "Internet Interface for Events", "Integrated Function Execution"],
+      "correct": 0,
+      "explanation": "IIFE (Immediately Invoked Function Expression) is a function that runs immediately after definition: (function() { })(). It creates a private scope."
+    },
+    {
+      "question": "What does the 'this' keyword refer to?",
+      "options": ["Always the global object", "The current execution context", "The function itself", "The window object"],
+      "correct": 1,
+      "explanation": "'this' refers to the execution context, which varies: global object in simple functions, the object in methods, and can be explicitly set with call/apply/bind."
+    },
+    {
+      "question": "Which method removes the last element from an array?",
+      "options": ["remove()", "pop()", "delete()", "shift()"],
+      "correct": 1,
+      "explanation": "pop() removes and returns the last element of an array. shift() removes the first element. Both modify the original array."
+    },
+    {
+      "question": "What is a promise in JavaScript?",
+      "options": ["A guarantee", "An object for async operations", "A variable", "A loop"],
+      "correct": 1,
+      "explanation": "A Promise is an object representing the eventual completion or failure of an asynchronous operation, with methods to handle success (then) and error (catch)."
+    },
+    {
+      "question": "How do you declare a constant?",
+      "options": ["var", "let", "const", "constant"],
+      "correct": 2,
+      "explanation": "const declares a constant variable that cannot be reassigned. However, if it's an object or array, its contents can still be modified."
+    },
+    {
+      "question": "What is the difference between let and var?",
+      "options": ["No difference", "let is block-scoped, var is function-scoped", "var is block-scoped, let is function-scoped", "let is faster"],
+      "correct": 1,
+      "explanation": "let is block-scoped (limited to {} blocks), while var is function-scoped (limited to functions). let also prevents hoisting issues and redeclaration."
+    },
+    {
+      "question": "Which method converts JSON to a JavaScript object?",
+      "options": ["JSON.parse()", "JSON.stringify()", "JSON.convert()", "JSON.object()"],
+      "correct": 0,
+      "explanation": "JSON.parse() converts a JSON string into a JavaScript object. JSON.stringify() does the opposite, converting an object to a JSON string."
+    },
+    {
+      "question": "What is event bubbling?",
+      "options": ["Events going down the DOM", "Events going up the DOM", "Creating events", "Removing events"],
+      "correct": 1,
+      "explanation": "Event bubbling is when an event propagates from the target element up through its ancestors in the DOM tree. Capturing is the opposite direction."
+    },
+    {
+      "question": "What does the 'async' keyword do?",
+      "options": ["Makes code run faster", "Declares an async function", "Creates a thread", "Pauses execution"],
+      "correct": 1,
+      "explanation": "async declares a function as asynchronous, allowing use of await inside it. It always returns a Promise, even if you don't explicitly return one."
+    },
+    {
+      "question": "What is the purpose of 'await'?",
+      "options": ["To wait for a Promise to resolve", "To create a Promise", "To reject a Promise", "To speed up code"],
+      "correct": 0,
+      "explanation": "await pauses execution of an async function until a Promise resolves, then returns the resolved value. It can only be used inside async functions."
+    },
+    {
+      "question": "Which method creates a new array by mapping?",
+      "options": ["forEach()", "map()", "filter()", "reduce()"],
+      "correct": 1,
+      "explanation": "map() creates a new array by applying a function to each element. forEach() executes a function but doesn't return a new array."
+    },
+    {
+      "question": "What is hoisting in JavaScript?",
+      "options": ["Moving elements up", "Moving declarations to top of scope", "Optimization technique", "Memory management"],
+      "correct": 1,
+      "explanation": "Hoisting is JavaScript's behavior of moving variable and function declarations to the top of their scope before code execution. Only declarations are hoisted, not assignments."
+    },
+    {
+      "question": "How do you add an event listener?",
+      "options": ["element.event = handler", "element.addEventListener()", "element.attachEvent()", "element.bindEvent()"],
+      "correct": 1,
+      "explanation": "addEventListener() is the standard method to attach event handlers. It allows multiple listeners for the same event and provides better control than older methods."
+    },
+    {
+      "question": "What is the spread operator?",
+      "options": ["...", "->", "::", "=>"],
+      "correct": 0,
+      "explanation": "The spread operator (...) expands iterables like arrays into individual elements. It's used for array copying, merging, and function argument spreading."
+    },
+    {
+      "question": "What does 'NaN' stand for?",
+      "options": ["Not a Null", "Not a Number", "New and Null", "No and Null"],
+      "correct": 1,
+      "explanation": "NaN stands for 'Not a Number'. It's a special value returned when mathematical operations fail, like 0/0 or parseInt('abc')."
+    },
+    {
+      "question": "Which method filters an array?",
+      "options": ["map()", "filter()", "reduce()", "find()"],
+      "correct": 1,
+      "explanation": "filter() creates a new array with elements that pass a test. It doesn't modify the original array and returns only elements where the callback returns true."
+    },
+    {
+      "question": "What is a callback function?",
+      "options": ["A function called back", "A function passed as argument", "A recursive function", "A main function"],
+      "correct": 1,
+      "explanation": "A callback is a function passed as an argument to another function, to be executed later. It's fundamental to asynchronous JavaScript and event handling."
+    },
+    {
+      "question": "What is the difference between == and ===?",
+      "options": ["No difference", "== compares value, === compares value and type", "== compares type, === compares value", "Both are identical"],
+      "correct": 1,
+      "explanation": "== performs type coercion before comparison (5 == '5' is true), while === is strict equality without coercion (5 === '5' is false)."
+    },
+    {
+      "question": "How do you check if a variable is an array?",
+      "options": ["typeof arr === 'array'", "arr instanceof Array", "Array.isArray(arr)", "Both B and C"],
+      "correct": 3,
+      "explanation": "Both Array.isArray(arr) and arr instanceof Array check if a variable is an array. Array.isArray() is preferred as it works across frames."
+    }
+  ],
+  "python": [
+    {
+      "question": "How do you create a list in Python?",
+      "options": ["list = (1, 2, 3)", "list = [1, 2, 3]", "list = {1, 2, 3}", "list = <1, 2, 3>"],
+      "correct": 1,
+      "explanation": "Lists in Python are created using square brackets: [1, 2, 3]. Parentheses create tuples, curly braces create sets or dictionaries."
+    },
+    {
+      "question": "What is the correct way to create a function?",
+      "options": ["function myFunc():", "def myFunc():", "create myFunc():", "func myFunc():"],
+      "correct": 1,
+      "explanation": "Functions in Python are defined using the 'def' keyword followed by the function name and parentheses: def myFunc():"
+    },
+    {
+      "question": "Which data type is immutable?",
+      "options": ["List", "Dictionary", "Tuple", "Set"],
+      "correct": 2,
+      "explanation": "Tuples are immutable - once created, they cannot be modified. Lists, dictionaries, and sets are mutable and can be changed after creation."
+    },
+    {
+      "question": "What does 'self' represent in a class method?",
+      "options": ["The class itself", "The instance of the class", "The parent class", "A static variable"],
+      "correct": 1,
+      "explanation": "'self' represents the instance of the class. It's the first parameter of instance methods and allows access to instance attributes and methods."
+    },
+    {
+      "question": "How do you start a comment in Python?",
+      "options": ["// comment", "/* comment */", "# comment", "-- comment"],
+      "correct": 2,
+      "explanation": "Python uses the hash symbol (#) for single-line comments. For multi-line comments, you can use triple quotes (''' or \"\"\") as docstrings."
+    },
+    {
+      "question": "What is a dictionary in Python?",
+      "options": ["An ordered list", "A key-value pair collection", "A set of unique values", "A text file"],
+      "correct": 1,
+      "explanation": "A dictionary is an unordered collection of key-value pairs enclosed in curly braces: {'key': 'value'}. Keys must be unique and immutable."
+    },
+    {
+      "question": "Which keyword is used for inheritance?",
+      "options": ["inherits", "extends", ":", "super"],
+      "correct": 2,
+      "explanation": "Python uses a colon followed by the parent class name for inheritance: class Child(Parent). The colon indicates inheritance from the specified parent."
+    },
+    {
+      "question": "What does the 'len()' function do?",
+      "options": ["Calculates length", "Creates a list", "Loops through items", "Converts types"],
+      "correct": 0,
+      "explanation": "len() returns the length (number of items) of an object like a string, list, tuple, or dictionary. It's a built-in function."
+    },
+    {
+      "question": "How do you handle exceptions in Python?",
+      "options": ["try-catch", "try-except", "try-error", "do-catch"],
+      "correct": 1,
+      "explanation": "Python uses try-except blocks for exception handling. Code that might raise an exception goes in try, and handling code goes in except."
+    },
+    {
+      "question": "What is a list comprehension?",
+      "options": ["A comment explaining lists", "A concise way to create lists", "A list of functions", "A documentation string"],
+      "correct": 1,
+      "explanation": "List comprehensions provide a concise syntax to create lists: [x for x in range(10)] creates a list of numbers 0-9 in one line."
+    },
+    {
+      "question": "Which method adds an item to a list?",
+      "options": ["add()", "append()", "insert()", "push()"],
+      "correct": 1,
+      "explanation": "append() adds a single item to the end of a list. insert() adds at a specific index, and extend() adds multiple items from another iterable."
+    },
+    {
+      "question": "What is the purpose of '__init__'?",
+      "options": ["To initialize a class", "To import modules", "To start a program", "To define variables"],
+      "correct": 0,
+      "explanation": "__init__ is a special method (constructor) that initializes new instances of a class. It's called automatically when creating an object."
+    },
+    {
+      "question": "How do you create a virtual environment?",
+      "options": ["python -m venv env", "virtualenv env", "Both A and B", "Neither"],
+      "correct": 2,
+      "explanation": "Both 'python -m venv env' (built-in) and 'virtualenv env' (requires package) create virtual environments for isolating Python dependencies."
+    },
+    {
+      "question": "What does 'import' do?",
+      "options": ["Exports code", "Imports modules/packages", "Compiles code", "Runs tests"],
+      "correct": 1,
+      "explanation": "import statement brings modules or packages into your namespace, allowing you to use their functions, classes, and variables."
+    },
+    {
+      "question": "Which loop is used for iteration?",
+      "options": ["for loop", "while loop", "Both A and B", "Neither"],
+      "correct": 2,
+      "explanation": "Python has both for loops (iterating over sequences) and while loops (repeating while condition is true). for is more common for iteration."
+    },
+    {
+      "question": "What is a decorator in Python?",
+      "options": ["A design pattern", "A function that modifies another function", "A UI element", "A data type"],
+      "correct": 1,
+      "explanation": "A decorator is a function that modifies the behavior of another function. They're used with @ syntax and are powerful for adding functionality."
+    },
+    {
+      "question": "How do you open a file?",
+      "options": ["open('file.txt')", "file.open('file.txt')", "File('file.txt')", "read('file.txt')"],
+      "correct": 0,
+      "explanation": "The open() function opens a file and returns a file object. It's commonly used with 'with' statement for automatic file closing: with open('file') as f:"
+    },
+    {
+      "question": "What is the difference between 'is' and '=='?",
+      "options": ["No difference", "is checks identity, == checks equality", "is checks equality, == checks identity", "Both are identical"],
+      "correct": 1,
+      "explanation": "is checks if two variables reference the same object (identity), while == checks if their values are equal. a = [1,2]; b = a; a is b is True."
+    },
+    {
+      "question": "What does 'yield' do?",
+      "options": ["Returns a value", "Creates a generator", "Stops execution", "Raises an exception"],
+      "correct": 1,
+      "explanation": "yield turns a function into a generator, producing values one at a time and pausing execution between each yield. It's memory-efficient for large sequences."
+    },
+    {
+      "question": "How do you slice a list?",
+      "options": ["list[1:5]", "list.slice(1,5)", "list.get(1,5)", "list(1:5)"],
+      "correct": 0,
+      "explanation": "Lists are sliced using [start:end:step] syntax. list[1:5] returns elements from index 1 to 4 (end is exclusive). Negative indices count from the end."
+    },
+    {
+      "question": "What is a lambda function?",
+      "options": ["A regular function", "An anonymous function", "A class method", "A module"],
+      "correct": 1,
+      "explanation": "Lambda functions are anonymous, single-expression functions defined with lambda keyword: lambda x: x * 2. They're often used with map/filter/reduce."
+    },
+    {
+      "question": "Which method removes an item from a list?",
+      "options": ["delete()", "remove()", "pop()", "Both B and C"],
+      "correct": 3,
+      "explanation": "remove(value) removes the first occurrence of a value, pop(index) removes and returns an item at a specific index (or last if no index)."
+    },
+    {
+      "question": "What is the purpose of 'pass'?",
+      "options": ["To pass variables", "A placeholder for empty code", "To skip iterations", "To end loops"],
+      "correct": 1,
+      "explanation": "pass is a null operation used as a placeholder where code is required syntactically but you don't want any action, like in empty functions or loops."
+    },
+    {
+      "question": "How do you join strings in a list?",
+      "options": ["list.join()", "' '.join(list)", "concat(list)", "merge(list)"],
+      "correct": 1,
+      "explanation": "The join() method is called on the separator string: ' '.join(['a', 'b']) returns 'a b'. It's the efficient way to concatenate strings."
+    },
+    {
+      "question": "What is a module in Python?",
+      "options": ["A function", "A file containing Python code", "A variable", "A class"],
+      "correct": 1,
+      "explanation": "A module is a file containing Python definitions and statements. Modules allow you to organize code into reusable files that can be imported."
+    },
+    {
+      "question": "What does 'global' keyword do?",
+      "options": ["Declares a global variable", "Imports global modules", "Creates global functions", "No effect"],
+      "correct": 0,
+      "explanation": "The global keyword declares that a variable inside a function refers to a global variable, not creating a new local variable."
+    },
+    {
+      "question": "How do you check if a key exists in a dictionary?",
+      "options": ["dict.has(key)", "key in dict", "dict.exists(key)", "dict.contains(key)"],
+      "correct": 1,
+      "explanation": "Use the 'in' operator: 'key in dict' returns True if the key exists. dict.get(key) can also be used with a default value."
+    }
+  ],
+  "docker": [
+    {
+      "question": "What is Docker?",
+      "options": ["A database", "A containerization platform", "A programming language", "An operating system"],
+      "correct": 1,
+      "explanation": "Docker is a containerization platform that packages applications and their dependencies into containers, ensuring consistent environments across development and production."
+    },
+    {
+      "question": "What is a Docker image?",
+      "options": ["A running container", "A read-only template for containers", "A Docker file", "A network configuration"],
+      "correct": 1,
+      "explanation": "A Docker image is a read-only template that contains the application code, libraries, dependencies, and runtime needed to create containers."
+    },
+    {
+      "question": "Which command runs a Docker container?",
+      "options": ["docker start", "docker run", "docker create", "docker execute"],
+      "correct": 1,
+      "explanation": "docker run creates and starts a new container from an image. docker create only creates without starting, and docker start starts an existing container."
+    },
+    {
+      "question": "What is a Dockerfile?",
+      "options": ["A file to store Docker data", "A script to build Docker images", "A Docker configuration file", "A Docker network file"],
+      "correct": 1,
+      "explanation": "A Dockerfile is a text file that contains instructions for building a Docker image. It specifies the base image, dependencies, and commands to run."
+    },
+    {
+      "question": "Which instruction sets the base image in a Dockerfile?",
+      "options": ["FROM", "BASE", "IMAGE", "SOURCE"],
+      "correct": 0,
+      "explanation": "FROM instruction specifies the base image for subsequent instructions. Every Dockerfile must start with a FROM statement (except in multi-stage builds)."
+    },
+    {
+      "question": "What is Docker Compose?",
+      "options": ["A Docker image", "A tool for multi-container applications", "A Docker registry", "A Docker network"],
+      "correct": 1,
+      "explanation": "Docker Compose is a tool for defining and running multi-container Docker applications using YAML files to configure services, networks, and volumes."
+    },
+    {
+      "question": "Which command lists running containers?",
+      "options": ["docker list", "docker ps", "docker show", "docker containers"],
+      "correct": 1,
+      "explanation": "docker ps lists running containers. Adding -a shows all containers including stopped ones. The command comes from 'process status'."
+    },
+    {
+      "question": "What is a Docker volume?",
+      "options": ["A container size", "Persistent storage for containers", "A network connection", "A CPU limit"],
+      "correct": 1,
+      "explanation": "Docker volumes provide persistent storage that exists independently of containers, allowing data to survive container deletion and recreation."
+    },
+    {
+      "question": "Which instruction copies files into a Docker image?",
+      "options": ["COPY", "ADD", "MOVE", "Both A and B"],
+      "correct": 3,
+      "explanation": "Both COPY and ADD copy files into images. COPY is preferred for simple copying, while ADD can also handle URLs and automatic extraction."
+    },
+    {
+      "question": "What is the purpose of docker-compose.yml?",
+      "options": ["To store logs", "To define multi-container applications", "To configure Docker daemon", "To backup images"],
+      "correct": 1,
+      "explanation": "docker-compose.yml is a YAML file that defines services, networks, and volumes for multi-container applications managed by Docker Compose."
+    },
+    {
+      "question": "Which command stops a running container?",
+      "options": ["docker kill", "docker stop", "docker halt", "docker end"],
+      "correct": 1,
+      "explanation": "docker stop gracefully stops a container by sending SIGTERM. docker kill immediately stops by sending SIGKILL. stop is preferred for clean shutdown."
+    },
+    {
+      "question": "What is a Docker registry?",
+      "options": ["A local directory", "A storage and distribution system for images", "A container network", "A Docker API"],
+      "correct": 1,
+      "explanation": "A Docker registry stores and distributes Docker images. Docker Hub is the default public registry, but private registries can also be used."
+    },
+    {
+      "question": "Which instruction sets environment variables?",
+      "options": ["ENV", "SET", "VAR", "CONFIG"],
+      "correct": 0,
+      "explanation": "ENV instruction sets environment variables in the Docker image. These variables are available during the build and when the container runs."
+    },
+    {
+      "question": "What is container orchestration?",
+      "options": ["Building containers", "Managing containers at scale", "Creating images", "Networking containers"],
+      "correct": 1,
+      "explanation": "Container orchestration automates deployment, scaling, and management of containerized applications. Kubernetes is the most popular orchestration tool."
+    },
+    {
+      "question": "Which command removes a container?",
+      "options": ["docker delete", "docker remove", "docker rm", "docker clear"],
+      "correct": 2,
+      "explanation": "docker rm removes one or more containers. Containers must be stopped before removal. docker rmi removes images, not containers."
+    },
+    {
+      "question": "What is the difference between CMD and ENTRYPOINT?",
+      "options": ["No difference", "CMD can be overridden, ENTRYPOINT cannot", "ENTRYPOINT runs first", "Both are identical"],
+      "correct": 1,
+      "explanation": "ENTRYPOINT defines the main command and cannot be easily overridden. CMD provides default arguments that can be overridden. They're often used together."
+    },
+    {
+      "question": "Which command builds an image from a Dockerfile?",
+      "options": ["docker build", "docker create", "docker make", "docker compile"],
+      "correct": 0,
+      "explanation": "docker build creates an image from a Dockerfile using the syntax 'docker build -t name .' where '.' is the build context directory."
+    },
+    {
+      "question": "What is a Docker network?",
+      "options": ["Internet connection", "Communication bridge between containers", "Storage system", "CPU allocation"],
+      "correct": 1,
+      "explanation": "Docker networks enable communication between containers. They provide isolation and can be configured as bridge, overlay, macvlan, or host networks."
+    },
+    {
+      "question": "Which instruction specifies the default command?",
+      "options": ["RUN", "CMD", "EXEC", "COMMAND"],
+      "correct": 1,
+      "explanation": "CMD provides default commands/arguments for a running container. There can only be one CMD; if multiple are specified, only the last takes effect."
+    },
+    {
+      "question": "What is the purpose of .dockerignore?",
+      "options": ["To ignore Docker errors", "To exclude files from build context", "To ignore container logs", "To configure Docker daemon"],
+      "correct": 1,
+      "explanation": ".dockerignore specifies files and directories to exclude from the Docker build context, similar to .gitignore, reducing build time and image size."
+    },
+    {
+      "question": "Which command shows container logs?",
+      "options": ["docker logs", "docker show", "docker output", "docker cat"],
+      "correct": 0,
+      "explanation": "docker logs displays the logs of a container. Adding -f follows the log output in real-time, and --tail shows only the last N lines."
+    },
+    {
+      "question": "What is a multi-stage build?",
+      "options": ["Building multiple images", "Using multiple FROM statements to optimize image size", "Building on multiple machines", "Parallel builds"],
+      "correct": 1,
+      "explanation": "Multi-stage builds use multiple FROM statements to create intermediate images, copying only needed artifacts to the final image, reducing size."
+    },
+    {
+      "question": "Which command executes a command in a running container?",
+      "options": ["docker run", "docker exec", "docker command", "docker execute"],
+      "correct": 1,
+      "explanation": "docker exec runs a command in a running container. Unlike docker run which creates new containers, exec operates on existing running containers."
+    },
+    {
+      "question": "What is the purpose of EXPOSE instruction?",
+      "options": ["To expose secrets", "To document which ports the container listens on", "To open firewall", "To publish ports"],
+      "correct": 1,
+      "explanation": "EXPOSE documents which ports the container listens on. It doesn't actually publish ports; that's done with -p flag when running containers."
+    },
+    {
+      "question": "Which command pulls an image from a registry?",
+      "options": ["docker get", "docker pull", "docker download", "docker fetch"],
+      "correct": 1,
+      "explanation": "docker pull downloads an image from a registry (like Docker Hub) to the local machine. It's the opposite of docker push."
+    },
+    {
+      "question": "What is the difference between ADD and COPY?",
+      "options": ["No difference", "ADD can handle URLs and extraction", "COPY is faster", "ADD is deprecated"],
+      "correct": 1,
+      "explanation": "ADD can handle remote URLs and automatically extract compressed files. COPY only copies local files and is preferred for simple file copying."
+    },
+    {
+      "question": "Which command removes unused Docker resources?",
+      "options": ["docker clean", "docker prune", "docker clear", "docker sweep"],
+      "correct": 1,
+      "explanation": "docker prune removes unused Docker resources like stopped containers, unused networks, and dangling images. Specific prunes exist for each resource type."
+    }
+  ],
+  "git": [
+    {
+      "question": "What is Git?",
+      "options": ["A programming language", "A version control system", "A database", "A text editor"],
+      "correct": 1,
+      "explanation": "Git is a distributed version control system that tracks changes in source code during software development, enabling collaboration and history management."
+    },
+    {
+      "question": "Which command initializes a Git repository?",
+      "options": ["git start", "git init", "git create", "git new"],
+      "correct": 1,
+      "explanation": "git init initializes a new Git repository in the current directory, creating the necessary .git folder for version tracking."
+    },
+    {
+      "question": "What does 'git clone' do?",
+      "options": ["Creates a copy of a file", "Copies a remote repository", "Creates a branch", "Merges branches"],
+      "correct": 1,
+      "explanation": "git clone copies a remote repository to your local machine, including all files, branches, and history. It's the first step when working with existing repos."
+    },
+    {
+      "question": "Which command stages changes for commit?",
+      "options": ["git add", "git stage", "git prepare", "git ready"],
+      "correct": 0,
+      "explanation": "git add stages changes to be included in the next commit. You can add specific files or use git add . to stage all changes."
+    },
+    {
+      "question": "What does 'git commit' do?",
+      "options": ["Pushes changes", "Saves staged changes with a message", "Creates a branch", "Merges changes"],
+      "correct": 1,
+      "explanation": "git commit saves staged changes to the local repository with a descriptive message. Each commit creates a snapshot of the project state."
+    },
+    {
+      "question": "Which command shows the commit history?",
+      "options": ["git history", "git log", "git show", "git list"],
+      "correct": 1,
+      "explanation": "git log displays the commit history showing commit hashes, authors, dates, and messages. It's essential for tracking project evolution."
+    },
+    {
+      "question": "What is a branch in Git?",
+      "options": ["A separate repository", "A parallel line of development", "A file type", "A remote server"],
+      "correct": 1,
+      "explanation": "A branch is a parallel line of development that allows work on features or fixes independently from the main codebase without affecting other branches."
+    },
+    {
+      "question": "Which command creates a new branch?",
+      "options": ["git new branch", "git branch", "git create branch", "git make branch"],
+      "correct": 1,
+      "explanation": "git branch creates a new branch. Use 'git branch name' to create or 'git checkout -b name' to create and switch to it immediately."
+    },
+    {
+      "question": "What does 'git checkout' do?",
+      "options": ["Checks for errors", "Switches branches or restores files", "Commits changes", "Pushes changes"],
+      "correct": 1,
+      "explanation": "git checkout switches between branches or restores files from previous commits. 'git switch' is the newer command for branch switching."
+    },
+    {
+      "question": "Which command merges branches?",
+      "options": ["git join", "git merge", "git combine", "git unite"],
+      "correct": 1,
+      "explanation": "git merge integrates changes from one branch into another, combining the histories. It creates a merge commit when branches have diverged."
+    },
+    {
+      "question": "What is the purpose of .gitignore?",
+      "options": ["To ignore Git commands", "To specify files not to track", "To ignore errors", "To hide commits"],
+      "correct": 1,
+      "explanation": ".gitignore specifies files and patterns that Git should not track, such as build artifacts, dependencies, and sensitive information."
+    },
+    {
+      "question": "Which command pushes changes to a remote repository?",
+      "options": ["git send", "git push", "git upload", "git transfer"],
+      "correct": 1,
+      "explanation": "git push uploads local commits to a remote repository. It's the counterpart to git pull and is essential for sharing changes with a team."
+    },
+    {
+      "question": "What does 'git pull' do?",
+      "options": ["Deletes remote changes", "Fetches and merges remote changes", "Creates a new branch", "Shows remote status"],
+      "correct": 1,
+      "explanation": "git pull fetches changes from a remote repository and merges them into the current branch. It's equivalent to git fetch followed by git merge."
+    },
+    {
+      "question": "What is a remote in Git?",
+      "options": ["A local folder", "A version of the repository on another server", "A backup", "A file"],
+      "correct": 1,
+      "explanation": "A remote is a version of your repository hosted on another server or network, enabling collaboration and backup. 'origin' is the default remote name."
+    },
+    {
+      "question": "Which command shows the current status?",
+      "options": ["git status", "git state", "git info", "git show"],
+      "correct": 0,
+      "explanation": "git status shows the state of the working directory and staging area, displaying modified, staged, and untracked files."
+    },
+    {
+      "question": "What is HEAD in Git?",
+      "options": ["The first commit", "A reference to the current branch", "The main branch", "A file"],
+      "correct": 1,
+      "explanation": "HEAD is a reference to the currently checked-out branch or commit. It points to the latest commit in your current working state."
+    },
+    {
+      "question": "Which command discards local changes?",
+      "options": ["git discard", "git reset", "git revert", "git undo"],
+      "correct": 1,
+      "explanation": "git reset --hard discards all local changes and resets to the last commit. git restore is the newer, safer command for this operation."
+    },
+    {
+      "question": "What is a merge conflict?",
+      "options": ["When Git crashes", "When changes conflict in different branches", "When a merge fails", "When branches are deleted"],
+      "correct": 1,
+      "explanation": "A merge conflict occurs when Git cannot automatically reconcile changes from different branches, requiring manual resolution before completing the merge."
+    },
+    {
+      "question": "Which command resolves merge conflicts?",
+      "options": ["git resolve", "Manual editing + git add", "git fix", "git conflict"],
+      "correct": 1,
+      "explanation": "Merge conflicts are resolved by manually editing the conflicting files, then staging the resolved files with git add to complete the merge."
+    },
+    {
+      "question": "What does 'git stash' do?",
+      "options": ["Deletes changes", "Temporarily saves changes", "Commits changes", "Pushes changes"],
+      "correct": 1,
+      "explanation": "git stash temporarily saves uncommitted changes, allowing you to switch branches or work on something else. Changes can be reapplied later with git stash pop."
+    },
+    {
+      "question": "Which command shows differences between commits?",
+      "options": ["git diff", "git compare", "git delta", "git change"],
+      "correct": 0,
+      "explanation": "git diff shows differences between files, commits, or branches. It's essential for reviewing changes before committing or merging."
+    },
+    {
+      "question": "What is a tag in Git?",
+      "options": ["A branch name", "A marker for specific commits", "A file label", "A remote reference"],
+      "correct": 1,
+      "explanation": "A tag is a reference to a specific point in Git history, typically used to mark release versions (v1.0, v2.0) or important milestones."
+    },
+    {
+      "question": "Which command creates a tag?",
+      "options": ["git tag", "git label", "git mark", "git version"],
+      "correct": 0,
+      "explanation": "git tag creates a new tag at the current commit. Use 'git tag v1.0' for lightweight tags or 'git tag -a v1.0 -m message' for annotated tags."
+    },
+    {
+      "question": "What does 'git rebase' do?",
+      "options": ["Rebases the repository", "Reapplies commits on top of another branch", "Creates a new branch", "Deletes commits"],
+      "correct": 1,
+      "explanation": "git rebase moves or combines a sequence of commits to a new base commit, creating a linear history. It's an alternative to merging."
+    },
+    {
+      "question": "Which command shows remote repositories?",
+      "options": ["git remote", "git remotes", "git show remote", "git list remote"],
+      "correct": 0,
+      "explanation": "git remote lists configured remote repositories. Adding -v shows the URLs. 'git remote add' adds new remotes."
+    },
+    {
+      "question": "What is the difference between git merge and git rebase?",
+      "options": ["No difference", "Merge preserves history, rebase rewrites it", "Rebase is faster", "Merge is safer"],
+      "correct": 1,
+      "explanation": "git merge preserves history as it happened, creating merge commits. git rebase rewrites history to create a linear sequence, which can be cleaner but changes history."
+    },
+    {
+      "question": "Which command removes files from Git tracking?",
+      "options": ["git delete", "git rm", "git remove", "git clear"],
+      "correct": 1,
+      "explanation": "git rm removes files from both the working directory and Git index. Use --cached to remove from tracking only while keeping the file."
+    }
+  ]
+}

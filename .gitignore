@@ -1,0 +1,21 @@
+# Build
+bin/
+obj/
+dist/
+*.user
+*.suo
+.vs/
+
+# Secrets & local config
+.env
+.env.*
+!*.env.example
+appsettings.Development.json
+**/appsettings.*.local.json
+
+# Node (if any)
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
