@@ -1,16 +1,40 @@
 # Education
 
-Learning and assessment applications.
+> **QuizMaster** — interactive browser quizzes with timer, scoring, and explanations.  
+> **OnlineTestAI** — work in progress (API scaffold + Blazor shell).
 
-## Projects
+## Featured: QuizMaster
 
-| Project | Description | Tech stack | Details |
-|---------|-------------|------------|---------|
-| **[QuizMaster](QuizMaster/)** | Interactive browser quizzes (C#, SQL, Python, Docker, AI, …) with timer, scoring, and explanations | HTML, CSS, JavaScript | [QuizMaster/README.md](QuizMaster/README.md) |
-| **[OnlineTestAI](TestAI/)** | Online testing platform API and Blazor web UI | ASP.NET Core 9, EF Core, PostgreSQL, Swagger | [TestAI/OnlineTestAI.sln](TestAI/OnlineTestAI.sln) |
+Interactive quiz app for C#, SQL, Python, Docker, AI, JavaScript, Git, and more.
 
-## Local configuration
+- **25+ curated MCQs per topic** — works offline from a local question bank
+- **Custom topics** — AI-generated questions when the bank has no match
+- **Timer, scoring, and explanations** — review answers after each run
+- **No build step** — static HTML, CSS, and JavaScript
 
-For **OnlineTestAI**, set your PostgreSQL connection string in `TestAI/OnlineTestAI.Api/appsettings.json` or a local `appsettings.Development.json` (gitignored). Do not commit real passwords.
+### Quick start
 
-**QuizMaster** runs as static files — use `npx serve .` from the `QuizMaster` folder (see project README).
+```bash
+cd QuizMaster
+npx --yes serve .
+```
+
+Open the URL shown (e.g. `http://localhost:3000`). Full usage and topics: **[QuizMaster/README.md](QuizMaster/README.md)**.
+
+## Work in progress: OnlineTestAI
+
+Foundation for an online testing platform (ASP.NET Core API, EF Core, PostgreSQL, Blazor UI). Models, migrations, and Swagger are in place; controllers and test-taking UI are not finished yet.
+
+See **[TestAI/README.md](TestAI/README.md)** for current scope and local setup if you want to explore the scaffold.
+
+## Project structure
+
+```
+Education/
+├── QuizMaster/          # Interactive quiz app (ready to run)
+├── TestAI/              # OnlineTestAI — WIP
+│   ├── OnlineTestAI.Api/
+│   └── OnlineTestAI.Web/
+├── README.md
+└── LICENSE
+```
